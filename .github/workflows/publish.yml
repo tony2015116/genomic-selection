@@ -24,6 +24,14 @@ jobs:
           use-public-rspm: true
 
       - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::knitr
+            any::rmarkdown
+            any::tidyverse
+            any::rio
+            any::data.table
+            any::rstatix
 
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
