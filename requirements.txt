@@ -1,4 +1,3 @@
 numpy
 pandas
-pytinytex
 matplotlib
