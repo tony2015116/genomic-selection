@@ -1,13 +1,5 @@
 ---
-title: "ggplot2 demo"
-author: "Norah Jones"
-date: "5/22/2021"
-format: 
-  html:
-    code-fold: false
-execute:
-  echo: true
-  eval: true
+jupyter: python3
 ---
 
 # Introduction
