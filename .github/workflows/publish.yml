@@ -34,6 +34,7 @@ jobs:
             any::rstatix
             any::rvest
             any::httr2
+            any::reticulate
 
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
