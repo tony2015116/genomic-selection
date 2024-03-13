@@ -1,5 +1,14 @@
 ---
-jupyter: python3
+title: "My Document"
+author: "Norah Jones"
+date: "5/22/2021"
+execute:
+  echo: true
+  eval: true
+#jupyter: python3
+format: 
+  html:
+    code-fold: true
 ---
 
 # Introduction
@@ -16,7 +25,7 @@ import pandas as pd
 1 + 6
 ```
 
-```{hon}
+```{python}
 1 + 1
 ```
 
@@ -24,7 +33,36 @@ import pandas as pd
 1 + 1
 ```
 
-```{r}
+``` R
 library(tidyverse)
-head(iris)
+irir %>%
+  head()
 ```
+
+```{python}
+#| echo: true
+
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4])
+plt.show()
+```
+
+```{r}
+#| echo: true
+library(tidyverse)
+iris3 %>%
+  head()
+```
+
+```{python}
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4,6,7,8])
+```
+
+```{r}
+#| eval: true
+iris |>
+  head()
+```
+
+😄
