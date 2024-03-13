@@ -27,11 +27,15 @@ jobs:
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:
-          cache-version: 1
-
-      - name: Install R packages from requirements_r.txt
-        run: |
-          Rscript -e "packages <- readLines('requirements_r.txt'); install.packages(packages)"
+          packages:
+            any::knitr
+            any::rmarkdown
+            any::downlit
+            any::xml2
+            any::data.table
+            any::tidyverse
+            any::rio
+            any::rstatix
 
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
