@@ -1,4 +1,0 @@
-tidyverse
-rio
-data.table
-AGHmatrix

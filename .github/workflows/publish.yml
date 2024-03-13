@@ -32,6 +32,8 @@ jobs:
             any::rio
             any::data.table
             any::rstatix
+            any::rvest
+            any::httr2
 
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
@@ -39,7 +41,7 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
       - run: pip install jupyter
-      - run: pip install -r requirements_py.txt
+      - run: pip install -r requirements.txt
       - run: pip install --upgrade pip
 
       - name: Render and Publish
